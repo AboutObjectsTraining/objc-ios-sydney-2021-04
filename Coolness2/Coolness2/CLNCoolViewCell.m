@@ -101,8 +101,13 @@ IB_DESIGNABLE
 
 // TODO: Cache an instance and return it
 + (NSDictionary *)textAttributes {
-    return @{ NSFontAttributeName : [UIFont boldSystemFontOfSize:20],
-              NSForegroundColorAttributeName : UIColor.whiteColor };
+    static NSDictionary *attributes;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        attributes = @{ NSFontAttributeName : [UIFont boldSystemFontOfSize:20],
+                        NSForegroundColorAttributeName : UIColor.whiteColor };
+    });
+    return attributes;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
