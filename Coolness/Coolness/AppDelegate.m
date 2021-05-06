@@ -5,4 +5,8 @@
 
 @implementation AppDelegate
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"In %s", __func__);
+}
+
 @end
