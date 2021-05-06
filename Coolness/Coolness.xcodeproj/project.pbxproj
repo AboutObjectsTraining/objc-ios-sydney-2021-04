@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B4A6C912264222F600068963 /* CLNCoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A6C911264222F600068963 /* CLNCoolView.m */; };
 		B4A6C915264223D000068963 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A6C914264223D000068963 /* CLNCoolViewCell.m */; };
+		B4A6C92026425FD600068963 /* BlockLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A6C91F26425FD600068963 /* BlockLiteralTests.m */; };
 		B4B52A3D26411C930000A947 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B52A3C26411C930000A947 /* AppDelegate.m */; };
 		B4B52A4026411C930000A947 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B52A3F26411C930000A947 /* SceneDelegate.m */; };
 		B4B52A4826411C950000A947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B52A4726411C950000A947 /* Assets.xcassets */; };
@@ -17,11 +18,24 @@
 		B4B52A56264123920000A947 /* CLNCoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B52A55264123920000A947 /* CLNCoolViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B4A6C92226425FD600068963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4B52A3026411C930000A947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4B52A3726411C930000A947;
+			remoteInfo = Coolness;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B4A6C910264222F600068963 /* CLNCoolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolView.h; sourceTree = "<group>"; };
 		B4A6C911264222F600068963 /* CLNCoolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolView.m; sourceTree = "<group>"; };
 		B4A6C913264223D000068963 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
 		B4A6C914264223D000068963 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
+		B4A6C91D26425FD600068963 /* CoolnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A6C91F26425FD600068963 /* BlockLiteralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockLiteralTests.m; sourceTree = "<group>"; };
+		B4A6C92126425FD600068963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4B52A3826411C930000A947 /* Coolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B52A3B26411C930000A947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4B52A3C26411C930000A947 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B4A6C91A26425FD600068963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4B52A3526411C930000A947 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,10 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4A6C91E26425FD600068963 /* CoolnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4A6C91F26425FD600068963 /* BlockLiteralTests.m */,
+				B4A6C92126425FD600068963 /* Info.plist */,
+			);
+			path = CoolnessTests;
+			sourceTree = "<group>";
+		};
 		B4B52A2F26411C930000A947 = {
 			isa = PBXGroup;
 			children = (
 				B4B52A3A26411C930000A947 /* Coolness */,
+				B4A6C91E26425FD600068963 /* CoolnessTests */,
 				B4B52A3926411C930000A947 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B4B52A3826411C930000A947 /* Coolness.app */,
+				B4A6C91D26425FD600068963 /* CoolnessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +118,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B4A6C91C26425FD600068963 /* CoolnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4A6C92426425FD600068963 /* Build configuration list for PBXNativeTarget "CoolnessTests" */;
+			buildPhases = (
+				B4A6C91926425FD600068963 /* Sources */,
+				B4A6C91A26425FD600068963 /* Frameworks */,
+				B4A6C91B26425FD600068963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4A6C92326425FD600068963 /* PBXTargetDependency */,
+			);
+			name = CoolnessTests;
+			productName = CoolnessTests;
+			productReference = B4A6C91D26425FD600068963 /* CoolnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B4B52A3726411C930000A947 /* Coolness */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4B52A5126411C950000A947 /* Build configuration list for PBXNativeTarget "Coolness" */;
@@ -111,6 +161,10 @@
 			attributes = {
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					B4A6C91C26425FD600068963 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B4B52A3726411C930000A947;
+					};
 					B4B52A3726411C930000A947 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -130,11 +184,19 @@
 			projectRoot = "";
 			targets = (
 				B4B52A3726411C930000A947 /* Coolness */,
+				B4A6C91C26425FD600068963 /* CoolnessTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B4A6C91B26425FD600068963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4B52A3626411C930000A947 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +209,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B4A6C91926425FD600068963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A6C92026425FD600068963 /* BlockLiteralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4B52A3426411C930000A947 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +232,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B4A6C92326425FD600068963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4B52A3726411C930000A947 /* Coolness */;
+			targetProxy = B4A6C92226425FD600068963 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B4B52A4926411C950000A947 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -174,6 +252,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B4A6C92526425FD600068963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoolnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.CoolnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coolness.app/Coolness";
+			};
+			name = Debug;
+		};
+		B4A6C92626425FD600068963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoolnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.CoolnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coolness.app/Coolness";
+			};
+			name = Release;
+		};
 		B4B52A4F26411C950000A947 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +437,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B4A6C92426425FD600068963 /* Build configuration list for PBXNativeTarget "CoolnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A6C92526425FD600068963 /* Debug */,
+				B4A6C92626425FD600068963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B4B52A3326411C930000A947 /* Build configuration list for PBXProject "Coolness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
